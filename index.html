@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Bookstore App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons (Magnifier, Cart, Socials) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- STICKY NAVBAR -->
+    <nav id="navbar">
+        <div class="logo">📚 Deep Ocean...  </div>
+        
+        <!-- Search Bar with Magnifier Icon on Left -->
+        <div class="search-wrapper">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-input" placeholder="Find your book...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <!-- Right Side: Login & Cart -->
+        <div class="nav-actions">
+            <div class="cart-container" id="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <button id="login-btn" class="btn-login">
+                <i class="fas fa-user"></i> Login
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION with Blurred Background -->
+    <section class="hero-section">
+        <div class="blur-overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore thousands of books, from timeless classics to modern bestsellers.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h2 class="section-title">Trending Results</h2>
+        <div id="loader" class="loader hidden"></div>
+        <div id="book-container" class="book-grid"></div>
+    </main>
+
+    <!-- FOOTER with Social Media -->
+    <footer>
+        <div class="footer-content">
+            <h3>Get in Touch</h3>
+            <p>Follow us on social media for updates and book reviews.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2025 JS Bookstore | Powered by Google Books API</p>
+        </div>
+    </footer>
+
+    <!-- LOGIN MODAL (Hidden by default) -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn-submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
