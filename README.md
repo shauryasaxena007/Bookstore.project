@@ -6,7 +6,7 @@ The project is built using **HTML, CSS, and JavaScript** and focuses on working 
 ---
 
 ## 🚀 Features
-
+- API Formats
 - Fetches book data from an external API
 - Displays books dynamically on the UI
 - Clean and responsive bookstore layout
